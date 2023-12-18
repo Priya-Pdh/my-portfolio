@@ -1,0 +1,61 @@
+{
+    "personalInfo": {
+      "name": "Priya Pradhan",
+      "title": "Web Dev Student",
+      "description": "An enthusiastic Web developer who thrives on creating digital solutions..."
+    },
+    "projects": [
+      {
+        "name": "E-commerce App",
+        "description": "Click to view the project",
+        "image": "./images/E-commerce.png",
+        "link": "https://typescript-react-js-e-commerce.onrender.com"
+      },
+      {
+        "name": "Portfolio Website",
+        "description": "Personal portfolio website built with React and Tailwind CSS",
+        "image": "./images/portfolio.png",
+        "link": "https://your-portfolio-website.com"
+      },
+      {
+        "name": "Task Manager App",
+        "description": "A simple task manager application using React and Firebase",
+        "image": "./images/task-manager.png",
+        "link": "https://task-manager-app.com"
+      },
+      {
+        "name": "Blog Platform",
+        "description": "Built a blog platform with Node.js, Express, and MongoDB",
+        "image": "./images/blog-platform.png",
+        "link": "https://blog-platform.com"
+      }
+    ],
+    "skills": ["React.js", "JavaScript", "CSS", "HTML", "Node.js", "Responsive Web Design", "Sass/SCSS", "CSS-in-JS (e.g., styled-components)", "Frontend Build Tools (Webpack, Vite)", "Version Control (Git)", "UI/UX Design Principles", "Cross-browser Compatibility", "Performance Optimization", "Web Accessibility (WCAG)", "RESTful APIs", "State Management (Redux)", "Responsive Frameworks (Tailwind CSS)"],
+    "education": [
+      {
+        "name": "Technigo, Sweden(Sep 2023- Dec 2023)",
+        "subject": "Javascript & React Upskill",
+        "logo": "./images/technigo-logo.png",
+        "website": "https://www.technigo.io/"
+      },
+      {
+        "name": "University XYZ",
+        "subject": "Computer Science",
+        "logo": "./images/university-logo.png",
+        "website": "https://www.universityxyz.edu/"
+      },
+      {
+        "name": "Coding Bootcamp ABC",
+        "subject": "Full Stack Web Development",
+        "logo": "./images/bootcamp-logo.png",
+        "website": "https://www.bootcampabc.com/"
+      }
+    ],
+    "contactInfo": {
+      "location": "Helsingborg, Sweden",
+      "email": "pp9319660@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/priyapradhan94/",
+      "github": "https://github.com/Priya-Pdh"
+    }
+  }
+  
