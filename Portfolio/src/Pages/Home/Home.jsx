@@ -1,10 +1,30 @@
+import React from 'react';
+import styled from 'styled-components';
+
+const HomeContainer = styled.div`
+  text-align: center;
+  padding: 20px;
+`;
+
+const ProfileImage = styled.img`
+  width: 200px; /* Adjust the width as needed */
+  border-radius: 50%; /* Make the image round */
+`;
+
+const Title = styled.h1`
+  margin-top: 10px;
+  font-size: 24px;
+  color: #333;
+`;
+
 const Home = () => {
   return (
-    <div>
-      <p>Home is here</p>
-    </div>
-  )
-}
+    <HomeContainer>
+      <ProfileImage src="path/to/your/image.jpg" alt="Your Name" />
+      <Title>Front-End Developer</Title>
+    </HomeContainer>
+  );
+};
 
 export default Home;
 

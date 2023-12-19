@@ -1,0 +1,32 @@
+nav {
+    background-color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox */
+    justify-content: flex-end; /* Align items to the end of the flex container */
+  }
+  
+  li {
+    margin-left: 15px; /* Optional spacing between items */
+  }
+  
+  li:first-child {
+    margin-left: 0; /* Remove margin for the first item */
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #555;
+  }
+  
