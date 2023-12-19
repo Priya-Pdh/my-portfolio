@@ -39,17 +39,30 @@
         "website": "https://www.technigo.io/"
       },
       {
-        "name": "University XYZ",
-        "subject": "Computer Science",
-        "logo": "./images/university-logo.png",
-        "website": "https://www.universityxyz.edu/"
-      },
-      {
         "name": "Coding Bootcamp ABC",
         "subject": "Full Stack Web Development",
         "logo": "./images/bootcamp-logo.png",
         "website": "https://www.bootcampabc.com/"
+      },
+      {
+        "name": "Folkuniversity, Sweden (Jan 2023 - May 2023)",
+        "subject": "Swedish for Immigrants (SFI) - Kurs C and D",
+        "logo": "./images/folkuniversity-logo.png",
+        "website": "https://www.folkuniversitetet.se/"
+      },
+      {
+        "name": "Lund University, Sweden (Jan 2021 - Jun 2022)",
+        "subject": "Masters in Sustainable Service Management",
+        "logo": "./images/lund-university-logo.png",
+        "website": "https://www.lunduniversity.lu.se/"
+      },
+      {
+        "name": "Kathmandu University, Nepal (Sep 2016 - May 2020)",
+        "subject": "Bachelor's in Business Administration",
+        "logo": "./images/kathmandu-university-logo.png",
+        "website": "https://www.ku.edu.np/"
       }
+    
     ],
     "contactInfo": {
       "location": "Helsingborg, Sweden",

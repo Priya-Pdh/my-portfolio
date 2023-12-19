@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import myImage from '../../assets/image-priya.jpg';
+import data from '../../data.json';
 
 const HomeContainer = styled.div`
   text-align: center;
@@ -8,7 +10,7 @@ const HomeContainer = styled.div`
 
 const ProfileImage = styled.img`
   width: 200px; /* Adjust the width as needed */
-  border-radius: 50%; /* Make the image round */
+  border-radius: 5%; /* Make the image round */
 `;
 
 const Title = styled.h1`
@@ -18,9 +20,10 @@ const Title = styled.h1`
 `;
 
 const Home = () => {
+  const { Home } = data
   return (
     <HomeContainer>
-      <ProfileImage src="path/to/your/image.jpg" alt="Your Name" />
+      <ProfileImage src={myImage} alt="my Name" />
       <Title>Front-End Developer</Title>
     </HomeContainer>
   );
