@@ -8,26 +8,52 @@
       {
         "name": "E-commerce App",
         "description": "Click to view the project",
-        "image": "./images/E-commerce.png",
+        "image": "src/assets/ecommerceApp.png",
         "link": "https://typescript-react-js-e-commerce.onrender.com"
       },
       {
-        "name": "Portfolio Website",
-        "description": "Personal portfolio website built with React and Tailwind CSS",
-        "image": "./images/portfolio.png",
-        "link": "https://your-portfolio-website.com"
-      },
-      {
-        "name": "Task Manager App",
+        "name": "Footprint Flip App",
         "description": "A simple task manager application using React and Firebase",
-        "image": "./images/task-manager.png",
-        "link": "https://task-manager-app.com"
+        "image": "src/assets/footprintApp.png",
+        "link": "https://footprint-flip.netlify.app"
       },
       {
-        "name": "Blog Platform",
+        "name": "Weather App",
         "description": "Built a blog platform with Node.js, Express, and MongoDB",
-        "image": "./images/blog-platform.png",
-        "link": "https://blog-platform.com"
+        "image": "src/assets/weatherApp.png",
+        "link": "https://weather-app-by-priya-and-naima.netlify.app"
+      },
+      {
+        "name": "Movie App",
+        "description": "Built a movie app platform with React.js, React Router and usePrams hook",
+        "image": "src/assets/movieApp.png",
+        "link": "https://movie-app-by-priya-naima-sarah.netlify.app"
+      },
+
+      {
+        "name": "Happy Thoughts App",
+        "description": "Built a movie app platform with React.js, React Router and usePrams hook",
+        "image": "src/assets/happyThought.png",
+        "link": "https://twitter-app-by-naima-and-priya.netlify.app"
+      },
+      {
+        "name": "Todo App",
+        "description": "Built a movie app platform with React.js, React Router and usePrams hook",
+        "image": "src/assets/todoApp.png",
+        "link": "https://todo-app-by-naima-sarah-priya.netlify.app"
+      },
+      {
+        "name": "Quiz App",
+        "description": "Built a movie app platform with React.js, React Router and usePrams hook",
+        "image": "src/assets/quizApp.png",
+        "link": "https://quiz-app-by-naima-sarah-priya.netlify.app"
+      },
+      
+      {
+        "name": "Survey App",
+        "description": "Built a movie app platform with React.js, React Router and usePrams hook",
+        "image": "src/assets/surveyApp.png",
+        "link": "https://survey-app-by-priya-and-naima.netlify.app"
       }
     ],
     "skills": ["React.js", "JavaScript", "CSS", "HTML", "Node.js", "Responsive Web Design", "Sass/SCSS", "CSS-in-JS (e.g., styled-components)", "Frontend Build Tools (Webpack, Vite)", "Version Control (Git)", "UI/UX Design Principles", "Cross-browser Compatibility", "Performance Optimization", "Web Accessibility (WCAG)", "RESTful APIs", "State Management (Redux)", "Responsive Frameworks (Tailwind CSS)"],

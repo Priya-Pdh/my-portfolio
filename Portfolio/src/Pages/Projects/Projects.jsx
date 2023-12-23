@@ -1,4 +1,3 @@
-import React from 'react';
 import data from '../../data.json';
 
 function Project() {
@@ -9,7 +8,7 @@ function Project() {
         <div key={index} >
           <h2>{project.name}</h2>
           <p>{project.description}</p>
-          <img src={project.image} alt={project.name} className="w-full h-auto rounded-md" />
+          <img src={project.image} alt={project.name} className="w-full h-auto rounded-md" style={{width: "50%"} } />
           <a
             href={project.link}
             target="_blank"
