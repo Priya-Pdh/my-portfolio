@@ -1,21 +1,42 @@
+import React from 'react';
+import { Box, Typography, Link } from '@mui/material';
+import { FaMapMarkerAlt, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import data from '../../data.json';
+
 function Contact() {
-    const {contactInfo} = data
+  const { contactInfo } = data;
+
   return (
-    <section className="my-8">
-      <h2 className="text-2xl font-bold">Contact Information</h2>
-      <p className="text-gray-600">Location: {contactInfo.location}</p>
-      <p className="text-gray-600">Email: {contactInfo.email}</p>
-      <a
-        href={contactInfo.linkedin}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-500 hover:underline"
-      >
-        LinkedIn
-      </a>
-      <p className="text-gray-600">GitHub: {contactInfo.github}</p>
-    </section>
+    <Box my={4}>
+      <Typography variant="h4" gutterBottom>
+        Contact Information
+      </Typography>
+      <Box>
+        <Typography variant="body1" color="text.secondary" paragraph>
+          <FaMapMarkerAlt style={{ marginRight: '8px' }} />
+          Location: <strong>{contactInfo.location}</strong>
+        </Typography>
+        <Typography variant="body1" color="text.secondary" paragraph>
+          <FaEnvelope style={{ marginRight: '8px' }} />
+          Email: <strong>{contactInfo.email}</strong>
+        </Typography>
+        <Link
+          href={contactInfo.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          color="primary"
+          underline="hover"
+          paragraph
+        >
+          <FaLinkedin style={{ marginRight: '8px' }} />
+          LinkedIn
+        </Link>
+        <Typography variant="body1" color="text.secondary" paragraph>
+          <FaGithub style={{ marginRight: '8px' }} />
+          GitHub: <strong>{contactInfo.github}</strong>
+        </Typography>
+      </Box>
+    </Box>
   );
 }
 

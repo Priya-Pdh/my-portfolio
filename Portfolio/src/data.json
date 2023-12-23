@@ -63,7 +63,7 @@
         "link": "https://music-app-by-naima-and-priya.netlify.app"
       }
     ],
-    "skills": ["React.js", "JavaScript", "CSS", "HTML", "Node.js", "Responsive Web Design", "Sass/SCSS", "CSS-in-JS (e.g., styled-components)", "Frontend Build Tools (Webpack, Vite)", "Version Control (Git)", "UI/UX Design Principles", "Cross-browser Compatibility", "Performance Optimization", "Web Accessibility (WCAG)", "RESTful APIs", "State Management (Redux)", "Responsive Frameworks (Tailwind CSS)"],
+    "skills": ["React.js", "JavaScript", "CSS", "HTML", "Node.js", "GraphQL", "Docker", "AWS", "Responsive Web Design", "Sass/SCSS", "CSS-in-JS (e.g., styled-components)", "Frontend Build Tools (Webpack, Vite)", "Version Control (Git)", "UI/UX Design Principles", "Cross-browser Compatibility", "Performance Optimization", "Web Accessibility (WCAG)", "RESTful APIs", "State Management (Redux)", "Material-UI"],
     "education": [
       {
         "name": "Technigo, Sweden(Sep 2023- Dec 2023)",
