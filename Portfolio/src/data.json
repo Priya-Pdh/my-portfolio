@@ -6,12 +6,6 @@
     },
     "projects": [
       {
-        "name": "E-commerce App",
-        "description": "Click to view the project",
-        "image": "src/assets/ecommerceApp.png",
-        "link": "https://typescript-react-js-e-commerce.onrender.com"
-      },
-      {
         "name": "Footprint Flip App",
         "description": "A simple task manager application using React and Firebase",
         "image": "src/assets/footprintApp.png",
@@ -35,6 +29,12 @@
         "description": "Built a movie app platform with React.js, React Router and usePrams hook",
         "image": "src/assets/happyThought.png",
         "link": "https://twitter-app-by-naima-and-priya.netlify.app"
+      },
+      {
+        "name": "E-commerce App",
+        "description": "Click to view the project",
+        "image": "src/assets/ecommerceApp.png",
+        "link": "https://typescript-react-js-e-commerce.onrender.com"
       },
       {
         "name": "Todo App",
