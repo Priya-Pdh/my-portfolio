@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Typography, Paper, Link } from '@mui/material';
 import data from '../../data.json';
 
@@ -7,8 +6,8 @@ function Education() {
 
   return (
     <Box my={4}>
-      <Typography variant="h4" gutterBottom>
-        Education
+      <Typography variant="h4"  sx= {{ textAlign: 'center'}}>
+        Education 🎓
       </Typography>
       {education.map((edu, index) => (
         <Paper key={index} elevation={3} sx={{ padding: 2, marginBottom: 2 }}>

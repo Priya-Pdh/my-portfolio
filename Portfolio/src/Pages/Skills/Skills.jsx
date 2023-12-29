@@ -1,5 +1,4 @@
-import React from 'react';
-import { Box, Typography, List, ListItem, Paper, Grid } from '@mui/material';
+import { Box, Typography, Paper, Grid } from '@mui/material';
 import {
   FaReact,
   FaJs,
@@ -49,20 +48,34 @@ const skillIcons = {
   // 'Material-Ui': <SiMaterialUi />,
 };
 
+const useStyles = {
+  paper: {
+    textAlign: 'center',
+    padding: '5px',
+    elevation: 3,
+  },
+  icon: {
+    fontSize: '5rem',
+    marginBottom: '1rem',
+  },
+};
+
 function Skills() {
   const { skills } = data;
 
   return (
     <Box my={4}>
-      <Typography variant="h4" gutterBottom>
-        Skills
+      <Typography variant="h4"  sx= {{ textAlign: 'center'}}>
+        Skills 🪄
       </Typography>
       <Grid container spacing={3}>
         {skills.map((skill, index) => (
           <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-            <Paper elevation={3} className="text-center p-4">
-              {skillIcons[skill] && <span className="text-5xl mb-4">{skillIcons[skill]}</span>}
-              <Typography variant="subtitle1" className="mb-2 font-semibold">
+            <Paper sx={useStyles.paper}>
+              {skillIcons[skill] && (
+                <span sx={useStyles.icon}>{skillIcons[skill]}</span>
+              )}
+              <Typography variant="subtitle1" mb={2} fontWeight="bold">
                 {skill}
               </Typography>
             </Paper>

@@ -1,5 +1,4 @@
-import React from 'react';
-import { Box, Typography, Card, CardContent, CardMedia, Button, Paper, Grid } from '@mui/material';
+import { Box, Typography, CardContent, CardMedia, Button, Paper, Grid } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import data from '../../data.json';
 
@@ -8,6 +7,9 @@ function Project() {
 
   return (
     <Box my={4}>
+       <Typography variant="h4"  sx= {{ textAlign: 'center'}}>
+        Projects 👩🏻‍💻
+      </Typography>
       {projects.map(({ name, image, description, link }, index) => (
         <Paper key={index} sx={{ margin: '0 auto 40px', maxWidth: '90%', padding: '20px' }}>
           <Grid container spacing={3} alignItems="center" justifyContent="center">

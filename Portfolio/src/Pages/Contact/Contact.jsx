@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Typography, Link } from '@mui/material';
 import { FaMapMarkerAlt, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import data from '../../data.json';
@@ -8,8 +7,8 @@ function Contact() {
 
   return (
     <Box my={4}>
-      <Typography variant="h4" gutterBottom>
-        Contact Information
+      <Typography variant="h4" sx= {{ textAlign: 'center'}}>
+        Contact Information 📞
       </Typography>
       <Box>
         <Typography variant="body1" color="text.secondary" paragraph>

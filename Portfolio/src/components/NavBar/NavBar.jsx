@@ -36,7 +36,7 @@ const Navbar = () => {
   ];
 
   return (
-    <AppBar position="static" style={{ backgroundColor: 'transparent',  borderRadius: "15px" }}>
+    <AppBar position="static" style={{ backgroundColor: 'transparent',  borderRadius: "15px"}}>
       <Toolbar >
         <Typography variant="h6" component="div"  sx={{
             flexGrow: 1,
