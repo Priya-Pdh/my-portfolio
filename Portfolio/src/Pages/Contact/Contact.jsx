@@ -7,7 +7,7 @@ function Contact() {
 
   return (
     <Box my={4}>
-      <Typography variant="h4" sx= {{ textAlign: 'center'}}>
+      <Typography variant="h4" sx= {{ textAlign: 'center',  marginBottom:'2rem'}}>
         Contact Information 📞
       </Typography>
       <Box>

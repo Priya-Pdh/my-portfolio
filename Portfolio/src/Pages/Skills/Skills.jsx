@@ -1,3 +1,4 @@
+import React from 'react';
 import { Box, Typography, Paper, Grid } from '@mui/material';
 import {
   FaReact,
@@ -21,7 +22,6 @@ import {
   FaDocker,
 } from 'react-icons/fa';
 import { SiGraphql } from 'react-icons/si';
-
 import data from '../../data.json';
 
 const skillIcons = {
@@ -45,36 +45,44 @@ const skillIcons = {
   'RESTful APIs': <FaServer />,
   'State Management (Redux)': <FaLayerGroup />,
   'Responsive Frameworks (Tailwind CSS)': <FaCss3Alt />,
-  // 'Material-Ui': <SiMaterialUi />,
 };
 
-const useStyles = {
-  paper: {
-    textAlign: 'center',
-    padding: '5px',
-    elevation: 3,
-  },
-  icon: {
-    fontSize: '5rem',
-    marginBottom: '1rem',
-  },
+const softSkillIcons = {
+  Communication: "🗣️",
+  Teamwork: "🤝",
+  Collaboration: "👫👫",
+  Enthusiasm: "🙌",
+  'Quick Learner': "🧠",
+  'Problem Solving': "🕵🏼‍♀️",
 };
 
-function Skills() {
+
+export const Skills = () => {
   const { skills } = data;
 
   return (
     <Box my={4}>
-      <Typography variant="h4"  sx= {{ textAlign: 'center'}}>
+      <Typography variant="h4" sx={{ textAlign: 'center', marginBottom: '2rem' }}>
         Skills 🪄
       </Typography>
       <Grid container spacing={3}>
-        {skills.map((skill, index) => (
+        {/* Tech Skills */}
+        {skills.techSkills.map((skill, index) => (
           <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-            <Paper sx={useStyles.paper}>
-              {skillIcons[skill] && (
-                <span sx={useStyles.icon}>{skillIcons[skill]}</span>
-              )}
+            <Paper>
+              {skillIcons[skill] && <span >{skillIcons[skill]}</span>}
+              <Typography variant="subtitle1" mb={2} fontWeight="bold">
+                {skill}
+              </Typography>
+            </Paper>
+          </Grid>
+        ))}
+
+        {/* Soft Skills */}
+        {skills.softSkills.map((skill, index) => (
+          <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+            <Paper>
+              {softSkillIcons[skill] && <span>{softSkillIcons[skill]}</span>}
               <Typography variant="subtitle1" mb={2} fontWeight="bold">
                 {skill}
               </Typography>
