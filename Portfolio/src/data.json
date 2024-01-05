@@ -7,60 +7,70 @@
     "projects": [
       {
         "name": "Footprint Flip App",
-        "description": "A simple task manager application using React and Firebase",
+        "description": "A game app through which we are trying to educate consumer about their action and what impact they have on the environment in a fun way.",
         "image": "src/assets/footprintApp.png",
-        "link": "https://footprint-flip.netlify.app"
+        "link": "https://footprint-flip.netlify.app",
+        "repository": "https://github.com/Priya-Pdh/Card-game"
       },
       {
         "name": "Weather App",
-        "description": "Built a blog platform with Node.js, Express, and MongoDB",
+        "description": "Weather app gives the forecast of 5 days, search weather of any city and geo-location weather updates on user approval",
         "image": "src/assets/weatherApp.png",
-        "link": "https://weather-app-by-priya-and-naima.netlify.app"
+        "link": "https://weather-app-by-priya-and-naima.netlify.app",
+        "repository": "https://github.com/Priya-Pdh/Weather-App"
       },
       {
         "name": "Movie App",
-        "description": "Built a movie app platform with React.js, React Router and usePrams hook",
+        "description": "Built a movie app platform with React.js, React Router and usePrams hook fetching the data from movie API",
         "image": "src/assets/movieApp.png",
-        "link": "https://movie-app-by-priya-naima-sarah.netlify.app"
+        "link": "https://movie-app-by-priya-naima-sarah.netlify.app",
+        "repository": "https://github.com/Priya-Pdh/project-movies-vite"
       },
 
       {
         "name": "Happy Thoughts App",
-        "description": "Built a movie app platform with React.js, React Router and usePrams hook",
+        "description": "App where user can share their thoughts like in twitter and like others thoughts",
         "image": "src/assets/happyThought.png",
-        "link": "https://twitter-app-by-naima-and-priya.netlify.app"
+        "link": "https://twitter-app-by-naima-and-priya.netlify.app",
+        "repository": "https://github.com/bdnaima/project-happy-thoughts-vite"
       },
-      {
-        "name": "E-commerce App",
-        "description": "Click to view the project",
-        "image": "src/assets/ecommerceApp.png",
-        "link": "https://typescript-react-js-e-commerce.onrender.com"
-      },
+      
       {
         "name": "Todo App",
-        "description": "Built a movie app platform with React.js, React Router and usePrams hook",
+        "description": "To do app with functions like:- adding todo list, subtask, deleting tasking and marking task completed",
         "image": "src/assets/todoApp.png",
-        "link": "https://todo-app-by-naima-sarah-priya.netlify.app"
+        "link": "https://todo-app-by-naima-sarah-priya.netlify.app",
+        "repository": "https://github.com/bdnaima/project-todos-redux"
       },
       {
         "name": "Quiz App",
-        "description": "Built a movie app platform with React.js, React Router and usePrams hook",
+        "description": "Quiz about interesting food related questions",
         "image": "src/assets/quizApp.png",
-        "link": "https://quiz-app-by-naima-sarah-priya.netlify.app"
+        "link": "https://quiz-app-by-naima-sarah-priya.netlify.app",
+        "repository": "https://github.com/Priya-Pdh/project-redux-quiz"
       },
       
       {
         "name": "Survey App",
-        "description": "Built a movie app platform with React.js, React Router and usePrams hook",
+        "description": "Survey app about drinks",
         "image": "src/assets/surveyApp.png",
-        "link": "https://survey-app-by-priya-and-naima.netlify.app"
+        "link": "https://survey-app-by-priya-and-naima.netlify.app",
+        "repository": "https://github.com/Priya-Pdh/project-survey-vite"
       },
       
       {
         "name": "Music App",
-        "description": "Built a movie app platform with React.js, React Router and usePrams hook",
+        "description": "Music app fetched the data from music app and styled with css",
         "image": "src/assets/musicApp.png",
-        "link": "https://music-app-by-naima-and-priya.netlify.app"
+        "link": "https://music-app-by-naima-and-priya.netlify.app",
+        "repository": "https://github.com/bdnaima/project-music-releases-vite"
+      },
+      {
+        "name": "E-commerce App",
+        "description": "E-commerce app of clothing features includes from adding to cart, sorting clothes to checkout payment and adding reviews",
+        "image": "src/assets/ecommerceApp.png",
+        "link": "https://typescript-react-js-e-commerce.onrender.com",
+        "repository": "https://github.com/Priya-Pdh/React.js-Typescript-Ecommerce"
       }
     ],
     "skills": {
@@ -77,13 +87,13 @@
     },    
     "education": [
       {
-        "name": "Technigo, Sweden(Sep 2023- Dec 2023)",
+        "name": "Technigo, Sweden (Sep 2023- Dec 2023)",
         "subject": "Javascript & React Upskill",
         "logo": "src/assets/technigo-logo.png",
         "website": "https://www.technigo.io/"
       },
       {
-        "name": "FooCoding",
+        "name": "FooCoding, Sweden (April 2022- Nov 2022)",
         "subject": "Full Stack Web Development",
         "logo":"src/assets/fc-logo.png",
         "website": "https://www.foocoding.org"
