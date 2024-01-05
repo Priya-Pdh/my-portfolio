@@ -1,59 +1,52 @@
 import React from 'react';
-import styled from 'styled-components';
+import { Box, Typography, Paper, Divider } from '@mui/material';
+import { styled } from '@mui/system';
 import myImage from '../../assets/image-priya.jpg';
 import data from '../../data.json';
+import { SafetyDivider } from '@mui/icons-material';
 
-const HomeContainer = styled.div`
-  text-align: center;
-  padding: 20px;
-`;
+const HomeContainer = styled('div')({
+  textAlign: 'center',
+  padding: '20px',
+});
 
-const ProfileImage = styled.img`
-  width: 200px; /* Adjust the width as needed */
-  border-radius: 5%; /* Make the image round */
-`;
+const ProfileImage = styled('img')({
+  width: '200px',
+  borderRadius: '5%',
+});
 
-const Title = styled.h1`
-  margin-top: 10px;
-  font-size: 24px;
-  color: #333;
-`;
+const Title = styled('h1')({
+  marginTop: '10px',
+  fontSize: '24px',
+  color: '#333',
+});
+
+const DescriptionContainer = styled(Paper)({
+  marginTop: '20px',
+  padding: '15px',
+  maxWidth: '850px',
+  marginLeft: 'auto',
+  marginRight: 'auto',
+});
 
 const Home = () => {
-  const { Home } = data
+  const { personalInfo } = data;
+
   return (
     <HomeContainer>
       <ProfileImage src={myImage} alt="my Name" />
-      <Title>Front-End Developer</Title>
+      <Title>{personalInfo.title}</Title>
+
+      <Box mt={2}>
+        <DescriptionContainer elevation={3}>
+          <Typography variant="h6">{personalInfo.summary}</Typography>
+          <Divider/>
+          <Typography>{personalInfo.des01}</Typography>
+          <Typography>{personalInfo.des02}</Typography>
+        </DescriptionContainer>
+      </Box>
     </HomeContainer>
   );
 };
 
 export default Home;
-
-// import Skills from './Skills';
-// import Education from './Education';
-// import ContactInfo from './ContactInfo';
-// import Project from './Project';
-// import data from '../data.json';
-
-// function Home() {
-//   const { personalInfo, projects, skills, education, contactInfo } = data;
-
-//   return (
-//     <div>
-//       <p>Hello</p>
-//       <Header personalInfo={personalInfo} />
-
-//       <Project projects={projects} />
-
-//       <Skills skills={skills} />
-
-//       <Education education={education} />
-
-//       <ContactInfo contactInfo={contactInfo} />
-//     </div>
-//   );
-// }
-
-// export default Home;

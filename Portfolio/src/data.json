@@ -1,8 +1,9 @@
 {
     "personalInfo": {
-      "name": "Priya Pradhan",
-      "title": "Web Dev Student",
-      "description": "An enthusiastic Web developer who thrives on creating digital solutions..."
+      "title": "Web Developer: Priya Pradhan",
+      "summary": "Personal Summary",
+      "des01": "As a web developer, I take pleasure in transforming concepts into user-friendly and visually captivating websites. Fueled by a passion for problem-solving, I adeptly navigate the complexities of coding to ensure seamless digital experiences. My unwavering commitment to continuous learning keeps me abreast of the latest technologies, enabling me to integrate cutting-edge elements into my work. The websites I create are not just functional; they stand at the forefront of innovation. ",
+      "des02": "Dedicated to staying on the pulse of web development, I approach each project with a fresh perspective, eagerly embracing new trends and techniques. Let's collaborate to redefine the boundaries of the web, crafting immersive and unforgettable digital experiences for users."
     },
     "projects": [
       {

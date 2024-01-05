@@ -1,20 +1,3 @@
-// import Home from "./Pages/Home/Home";
-
-// const App = () => {
-
-//   return (
-//     <>
-//       <h1>Hello</h1>
-//       <Home />
-//       <p>a</p>
-//       <p>hey hey</p>
-//     </>
-//   );
-// };
-
-// export default App;
-
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import Navbar from './components/NavBar/NavBar';
@@ -24,7 +7,6 @@ import Contact from './Pages/Contact/Contact';
 import Education from './Pages/Education/Education';
 
 const App = () => {
-  console.log("hellp")
   return (
 
     <BrowserRouter>
