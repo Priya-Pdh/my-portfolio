@@ -1,4 +1,4 @@
-import { Box, Typography, Link } from '@mui/material';
+import { Box, Typography, List, ListItem, ListItemIcon, ListItemText, Link } from '@mui/material';
 import { FaMapMarkerAlt, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import data from '../../data.json';
 
@@ -6,34 +6,57 @@ function Contact() {
   const { contactInfo } = data;
 
   return (
-    <Box my={4}>
-      <Typography variant="h4" sx= {{ textAlign: 'center',  marginBottom:'2rem'}}>
+    <Box my={4} textAlign={"center"}>
+      <Typography variant="h4" mb={2}>
         Contact Information 📞
       </Typography>
-      <Box>
-        <Typography variant="body1" color="text.secondary" paragraph>
-          <FaMapMarkerAlt style={{ marginRight: '8px' }} />
-          Location: <strong>{contactInfo.location}</strong>
-        </Typography>
-        <Typography variant="body1" color="text.secondary" paragraph>
-          <FaEnvelope style={{ marginRight: '8px' }} />
-          Email: <strong>{contactInfo.email}</strong>
-        </Typography>
-        <Link
-          href={contactInfo.linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-          color="primary"
-          underline="hover"
-          paragraph
-        >
-          <FaLinkedin style={{ marginRight: '8px' }} />
-          LinkedIn
-        </Link>
-        <Typography variant="body1" color="text.secondary" paragraph>
-          <FaGithub style={{ marginRight: '8px' }} />
-          GitHub: <strong>{contactInfo.github}</strong>
-        </Typography>
+      <Box  sx={{display: "flex", justifyContent: "center"}}>
+      <List>
+        <ListItem>
+          <ListItemIcon>
+            <FaMapMarkerAlt />
+          </ListItemIcon>
+          <ListItemText primary={`Location: ${contactInfo.location}`} />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <FaEnvelope />
+          </ListItemIcon>
+          <ListItemText primary={`Email: ${contactInfo.email}`} />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <FaLinkedin />
+          </ListItemIcon>
+          <ListItemText>
+            <Link
+              href={contactInfo.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              color="primary"
+              underline="hover"
+            >
+              LinkedIn
+            </Link>
+          </ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <FaGithub />
+          </ListItemIcon>
+          <ListItemText>
+            <Link
+              href={contactInfo.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              color="black"
+              underline="hover"
+            >
+              Github
+            </Link>
+          </ListItemText>
+        </ListItem>
+      </List>
       </Box>
     </Box>
   );

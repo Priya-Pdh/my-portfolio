@@ -10,7 +10,7 @@ function Project() {
        <Typography variant="h4"  sx= {{ textAlign: 'center',  marginBottom:'2rem'}}>
         Projects 👩🏻‍💻
       </Typography>
-      {projects.map(({ name, image, description, link }, index) => (
+      {projects.map(({ name, image, description, link, repository }, index) => (
         <Paper key={index} sx={{ margin: '0 auto 40px', maxWidth: '90%', padding: '20px' }}>
           <Grid container spacing={3} alignItems="center" justifyContent="center">
             {/* Project Image in the Center (xs) */}
@@ -27,6 +27,7 @@ function Project() {
                 <Typography variant="body2" color="text.secondary" paragraph>
                   {description}
                 </Typography>
+         
                 <Button
                   href={link}
                   target="_blank"
@@ -34,9 +35,22 @@ function Project() {
                   variant="contained"
                   color="primary"
                   endIcon={<ArrowForwardIcon />}
+                  sx={{ marginBottom: '8px' }}
+                
                 >
                   Click to view the project
                 </Button>
+                <Button
+                  href={repository}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="outlined"
+                  sx={{ marginLeft: '8px' }}
+                
+                >
+                  Source Code
+                </Button>
+             
               </CardContent>
             </Grid>
           </Grid>
