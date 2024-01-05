@@ -1,13 +1,8 @@
 [build]
-  command = "npm run build"  # Specify your build command
-  publish = "dist"          # Specify the directory to deploy
+  command = "npm run build"
+  publish = "dist"  # This should match the output directory for Vite
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Cache-Control = "public, max-age=0, must-revalidate"
