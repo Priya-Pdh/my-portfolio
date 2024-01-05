@@ -27,6 +27,13 @@
         "link": "https://movie-app-by-priya-naima-sarah.netlify.app",
         "repository": "https://github.com/Priya-Pdh/project-movies-vite"
       },
+      {
+        "name": "Burger Shop",
+        "description": "An online burger shop app with functionality like:- adding to cart, checkout and payment pages.",
+        "image": "src/assets/burgerShop.png",
+        "link": "https://onlineburgershop-priya.netlify.app/",
+        "repository": "https://github.com/Priya-Pdh/Skillup_Burger_Shop"
+      },
 
       {
         "name": "Happy Thoughts App",
