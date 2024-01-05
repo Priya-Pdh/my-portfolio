@@ -1,9 +1,8 @@
-import React from 'react';
 import { Box, Typography, Paper, Divider } from '@mui/material';
 import { styled } from '@mui/system';
 import myImage from '../../assets/image-priya.jpg';
 import data from '../../data.json';
-import { SafetyDivider } from '@mui/icons-material';
+
 
 const HomeContainer = styled('div')({
   textAlign: 'center',
