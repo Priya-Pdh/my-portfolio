@@ -1,3 +1,4 @@
+import React from 'react';
 import { Box, Typography, List, ListItem, ListItemIcon, ListItemText, Link } from '@mui/material';
 import { FaMapMarkerAlt, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import data from '../../data.json';

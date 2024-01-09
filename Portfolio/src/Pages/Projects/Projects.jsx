@@ -1,3 +1,4 @@
+import React from 'react';
 import { Box, Typography, CardContent, CardMedia, Button, Paper, Grid } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import data from '../../data.json';

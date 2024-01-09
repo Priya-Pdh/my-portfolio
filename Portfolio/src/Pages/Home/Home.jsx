@@ -1,3 +1,4 @@
+import React from 'react';
 import { Box, Typography, Paper, Divider } from '@mui/material';
 import { styled } from '@mui/system';
 import myImage from '../../assets/image-priya.jpg';
