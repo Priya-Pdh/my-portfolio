@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Typography, Paper, Link } from '@mui/material';
 import data from '../../data.json';
+import { getImagePath } from '../../assets/getImagePath';
 
 function Education() {
   const { education } = data;
@@ -13,7 +14,7 @@ function Education() {
       {education.map((edu, index) => (
         <Paper key={index} elevation={3} sx={{ padding: 2, marginBottom: 2 }}>
           <Box display="flex" alignItems="center">
-            <img src={edu.logo} alt={edu.name} style={{ marginRight: '16px', width: '120px', height: '90px' }} />
+            <img src={getImagePath(edu.logo)} alt={edu.name} style={{ marginRight: '16px', width: '120px', height: '90px' }} />
             <Box>
               <Typography variant="h6" gutterBottom>
                 {edu.name}

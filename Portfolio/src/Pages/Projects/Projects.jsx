@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography, CardContent, CardMedia, Button, Paper, Grid } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import data from '../../data.json';
+import { getImagePath } from '../../assets/getImagePath';
 
 function Project() {
   const { projects } = data;
@@ -16,7 +17,7 @@ function Project() {
           <Grid container spacing={3} alignItems="center" justifyContent="center">
             {/* Project Image in the Center (xs) */}
             <Grid item xs={12} md={8} sx={{ textAlign: 'center' }}>
-              <CardMedia component="img" alt={name} height="auto" width="100%" image={image} sx={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }} />
+              <CardMedia component="img" alt={name} height="auto" width="100%" image={getImagePath(image)} sx={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }} />
             </Grid>
 
             {/* Project Description and Button in the Center (xs, md) */}
