@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, Typography, Paper, Divider, CircularProgress } from '@mui/material';
 import { styled } from '@mui/system';
 import myImage from '../../assets/image-priya.jpg';
@@ -36,22 +36,20 @@ const Home = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const { personalInfo } = data;
 
-  const handleImageLoad = () => {
-    setImageLoaded(true);
-  };
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => setImageLoaded(true);
+    img.src = myImage;
+  }, []);
 
   return (
     <HomeContainer>
-      <ProfileImage
-        src={myImage}
-        alt="my Name"
-        onLoad={handleImageLoad}
-      />
       {!imageLoaded && (
         <SpinnerContainer>
           <CircularProgress />
         </SpinnerContainer>
       )}
+      <ProfileImage src={myImage} alt="my Name" style={{ display: imageLoaded ? 'block' : 'none' }} />
       <Title>{personalInfo.title}</Title>
 
       <Box mt={2}>
