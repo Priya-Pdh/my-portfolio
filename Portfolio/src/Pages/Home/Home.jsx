@@ -1,9 +1,8 @@
-import React from 'react';
-import { Box, Typography, Paper, Divider } from '@mui/material';
+import React, { useState } from 'react';
+import { Box, Typography, Paper, Divider, CircularProgress } from '@mui/material';
 import { styled } from '@mui/system';
 import myImage from '../../assets/image-priya.jpg';
 import data from '../../data.json';
-
 
 const HomeContainer = styled('div')({
   textAlign: 'center',
@@ -29,18 +28,36 @@ const DescriptionContainer = styled(Paper)({
   marginRight: 'auto',
 });
 
+const SpinnerContainer = styled(Box)({
+  marginTop: '20px',
+});
+
 const Home = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
   const { personalInfo } = data;
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
 
   return (
     <HomeContainer>
-      <ProfileImage src={myImage} alt="my Name" />
+      <ProfileImage
+        src={myImage}
+        alt="my Name"
+        onLoad={handleImageLoad}
+      />
+      {!imageLoaded && (
+        <SpinnerContainer>
+          <CircularProgress />
+        </SpinnerContainer>
+      )}
       <Title>{personalInfo.title}</Title>
 
       <Box mt={2}>
         <DescriptionContainer elevation={3}>
           <Typography variant="h6">{personalInfo.summary}</Typography>
-          <Divider/>
+          <Divider />
           <Typography>{personalInfo.des01}</Typography>
           <Typography>{personalInfo.des02}</Typography>
         </DescriptionContainer>
