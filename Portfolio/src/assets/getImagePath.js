@@ -25,7 +25,7 @@ export const getImagePath = (image) => {
         return burgerShop;
       case "../assets/ecommerceApp.png":
         return ecommerceApp;
-      case "../assets/f-logo.png":
+      case "../assets/f-logo.jpeg":
         return fLogo;
       case "../assets/fc-logo.png":
         return fcLogo;
