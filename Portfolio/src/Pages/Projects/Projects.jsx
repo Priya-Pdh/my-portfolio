@@ -12,11 +12,11 @@ function Project() {
         Projects 👩🏻‍💻
       </Typography>
       {projects.map(({ name, image, description, link, repository }, index) => (
-        <Paper key={index} sx={{ margin: '0 auto 40px', maxWidth: '90%', padding: '20px' }}>
+        <Paper key={index} sx={{ margin: '0 auto 40px', width: '90%', padding: '20px' }}>
           <Grid container spacing={3} alignItems="center" justifyContent="center">
             {/* Project Image in the Center (xs) */}
             <Grid item xs={12} md={8} sx={{ textAlign: 'center' }}>
-              <CardMedia component="img" alt={name} height="auto" maxWidth="100%" image={image} sx={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }} />
+              <CardMedia component="img" alt={name} height="auto" width="100%" image={image} sx={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }} />
             </Grid>
 
             {/* Project Description and Button in the Center (xs, md) */}
