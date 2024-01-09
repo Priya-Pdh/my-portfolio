@@ -12,6 +12,9 @@ const HomeContainer = styled('div')({
 const ProfileImage = styled('img')({
   width: '200px',
   borderRadius: '5%',
+   height: '300px', 
+  margin: '0 auto', 
+  display: 'block' 
 });
 
 const Title = styled('h1')({
