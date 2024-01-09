@@ -9,28 +9,28 @@
       {
         "name": "Footprint Flip App",
         "description": "A game app through which we are trying to educate consumer about their action and what impact they have on the environment in a fun way.",
-        "image": "/src/assets/footprintApp.png",
+        "image": "src/assets/footprintApp.png",
         "link": "https://footprint-flip.netlify.app",
         "repository": "https://github.com/Priya-Pdh/Card-game"
       },
       {
         "name": "Weather App",
         "description": "Weather app gives the forecast of 5 days, search weather of any city and geo-location weather updates on user approval",
-        "image": "/src/assets/weatherApp.png",
+        "image": "src/assets/weatherApp.png",
         "link": "https://weather-app-by-priya-and-naima.netlify.app",
         "repository": "https://github.com/Priya-Pdh/Weather-App"
       },
       {
         "name": "Movie App",
         "description": "Built a movie app platform with React.js, React Router and usePrams hook fetching the data from movie API",
-        "image": "/src/assets/movieApp.png",
+        "image": "src/assets/movieApp.png",
         "link": "https://movie-app-by-priya-naima-sarah.netlify.app",
         "repository": "https://github.com/Priya-Pdh/project-movies-vite"
       },
       {
         "name": "Burger Shop",
         "description": "An online burger shop app with functionality like:- adding to cart, checkout and payment pages.",
-        "image": "/src/assets/burgerShop.png",
+        "image": "src/assets/burgerShop.png",
         "link": "https://onlineburgershop-priya.netlify.app/",
         "repository": "https://github.com/Priya-Pdh/Skillup_Burger_Shop"
       },
@@ -38,7 +38,7 @@
       {
         "name": "Happy Thoughts App",
         "description": "App where user can share their thoughts like in twitter and like others thoughts",
-        "image": "/src/assets/happyThought.png",
+        "image": "src/assets/happyThought.png",
         "link": "https://twitter-app-by-naima-and-priya.netlify.app",
         "repository": "https://github.com/bdnaima/project-happy-thoughts-vite"
       },
@@ -46,14 +46,14 @@
       {
         "name": "Todo App",
         "description": "To do app with functions like:- adding todo list, subtask, deleting tasking and marking task completed",
-        "image": "/src/assets/todoApp.png",
+        "image": "src/assets/todoApp.png",
         "link": "https://todo-app-by-naima-sarah-priya.netlify.app",
         "repository": "https://github.com/bdnaima/project-todos-redux"
       },
       {
         "name": "Quiz App",
         "description": "Quiz about interesting food related questions",
-        "image": "/src/assets/quizApp.png",
+        "image": "src/assets/quizApp.png",
         "link": "https://quiz-app-by-naima-sarah-priya.netlify.app",
         "repository": "https://github.com/Priya-Pdh/project-redux-quiz"
       },
@@ -61,7 +61,7 @@
       {
         "name": "Survey App",
         "description": "Survey app about drinks",
-        "image": "/src/assets/surveyApp.png",
+        "image": "src/assets/surveyApp.png",
         "link": "https://survey-app-by-priya-and-naima.netlify.app",
         "repository": "https://github.com/Priya-Pdh/project-survey-vite"
       },
@@ -69,14 +69,14 @@
       {
         "name": "Music App",
         "description": "Music app fetched the data from music app and styled with css",
-        "image": "/src/assets/musicApp.png",
+        "image": "src/assets/musicApp.png",
         "link": "https://music-app-by-naima-and-priya.netlify.app",
         "repository": "https://github.com/bdnaima/project-music-releases-vite"
       },
       {
         "name": "E-commerce App",
         "description": "E-commerce app of clothing features includes from adding to cart, sorting clothes to checkout payment and adding reviews",
-        "image": "/src/assets/ecommerceApp.png",
+        "image": "src/assets/ecommerceApp.png",
         "link": "https://typescript-react-js-e-commerce.onrender.com",
         "repository": "https://github.com/Priya-Pdh/React.js-Typescript-Ecommerce"
       }
@@ -97,31 +97,31 @@
       {
         "name": "Technigo, Sweden (Sep 2023- Dec 2023)",
         "subject": "Javascript & React Upskill",
-        "logo": "/src/assets/technigo-logo.png",
+        "logo": "src/assets/technigo-logo.png",
         "website": "https://www.technigo.io/"
       },
       {
         "name": "FooCoding, Sweden (April 2022- Nov 2022)",
         "subject": "Full Stack Web Development",
-        "logo":"/src/assets/fc-logo.png",
+        "logo":"src/assets/fc-logo.png",
         "website": "https://www.foocoding.org"
       },
       {
         "name": "Folkuniversity, Sweden (Jan 2023 - May 2023)",
         "subject": "Swedish for Immigrants (SFI) - Kurs C and D",
-        "logo": "/src/assets/f-logo.jpeg",
+        "logo": "src/assets/f-logo.jpeg",
         "website": "https://www.folkuniversitetet.se/"
       },
       {
         "name": "Lund University, Sweden (Jan 2021 - Jun 2022)",
         "subject": "Masters in Sustainable Service Management",
-        "logo": "/src/assets/lu-logo.png",
+        "logo": "src/assets/lu-logo.png",
         "website": "https://www.lunduniversity.lu.se/"
       },
       {
         "name": "Kathmandu University, Nepal (Sep 2016 - May 2020)",
         "subject": "Bachelor's in Business Administration",
-        "logo": "/src/assets/ku-logo.png",
+        "logo": "src/assets/ku-logo.png",
         "website": "https://www.ku.edu.np/"
       }
     
