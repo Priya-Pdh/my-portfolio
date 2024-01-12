@@ -60,7 +60,9 @@ function Project() {
                     variant="contained"
                     color="primary"
                     endIcon={<ArrowForwardIcon />}
-                    sx={{ marginBottom: '8px' }}
+                    sx={{
+                      marginBottom: { xs: 2, sm: 0 }  
+                    }}
                   >
                     Click to view the project
                   </Button>
@@ -69,7 +71,9 @@ function Project() {
                     target="_blank"
                     rel="noopener noreferrer"
                     variant="outlined"
-                    sx={{ marginLeft: '8px' }}
+                    sx={{
+                      marginLeft: { xs: 0, sm: 2 }
+                    }}
                   >
                     Source Code
                   </Button>
