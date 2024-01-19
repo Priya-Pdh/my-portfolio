@@ -38,7 +38,7 @@ function Project() {
         Projects 👩🏻‍💻
       </Typography>
       {imagesLoaded ? (
-        projects.map(({ name, image, description, link, repository }, index) => (
+        projects.map(({ name, image, description,tech, link, repository }, index) => (
           <Paper key={index} sx={{ margin: '0 auto 40px', width: '90%', padding: '20px' }}>
             <Grid container spacing={3} alignItems="center" justifyContent="center">
               <Grid item xs={12} md={8} sx={{ textAlign: 'center' }}>
@@ -59,9 +59,13 @@ function Project() {
                   <Typography variant="h5" gutterBottom>
                     {name}
                   </Typography>
+                  <Typography variant="body2" color="primary" paragraph>
+                    Tech: {tech}
+                  </Typography>
                   <Typography variant="body2" color="text.secondary" paragraph>
                     {description}
                   </Typography>
+                 
 
                   <Button
                     href={link}
