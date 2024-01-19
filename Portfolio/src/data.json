@@ -9,13 +9,23 @@
       {
         "name": "Footprint Flip App",
         "description": "A game app through which we are trying to educate consumer about their action and what impact they have on the environment in a fun way.",
+        "tech": "React, i18next, Redux, Animation React-Router and CSS",
         "image": "../assets/footprintApp.png",
         "link": "https://footprint-flip.netlify.app",
         "repository": "https://github.com/Priya-Pdh/Card-game"
       },
       {
+        "name": "E-commerce App",
+        "description": "E-commerce app of clothing features includes from adding to cart, sorting clothes to checkout payment and adding reviews.",
+        "tech": "Typescript, React, CSS and HTML",
+        "image": "../assets/ecommerceApp.png",
+        "link": "https://typescript-react-js-e-commerce.onrender.com",
+        "repository": "https://github.com/Priya-Pdh/React.js-Typescript-Ecommerce"
+      },
+      {
         "name": "Weather App",
         "description": "Weather app gives the forecast of 5 days, search weather of any city and geo-location weather updates on user approval",
+        "tech": "React, Weather API, GeoLocation,Animation and CSS",
         "image": "../assets/weatherApp.png",
         "link": "https://weather-app-by-priya-and-naima.netlify.app",
         "repository": "https://github.com/Priya-Pdh/Weather-App"
@@ -23,6 +33,7 @@
       {
         "name": "Movie App",
         "description": "Built a movie app platform with React.js, React Router and usePrams hook fetching the data from movie API",
+        "tech": "React, React-Router, Movie API and CSS",
         "image": "../assets/movieApp.png",
         "link": "https://movie-app-by-priya-naima-sarah.netlify.app",
         "repository": "https://github.com/Priya-Pdh/project-movies-vite"
@@ -30,6 +41,7 @@
       {
         "name": "Burger Shop",
         "description": "An online burger shop app with functionality like:- adding to cart, checkout and payment pages.",
+        "tech": "React, React-Router, and SCSS",
         "image": "../assets/burgerShop.png",
         "link": "https://onlineburgershop-priya.netlify.app/",
         "repository": "https://github.com/Priya-Pdh/Skillup_Burger_Shop"
@@ -38,6 +50,7 @@
       {
         "name": "Happy Thoughts App",
         "description": "App where user can share their thoughts like in twitter and like others thoughts",
+        "tech": "React, GET AND POST Request, and CSS",
         "image": "../assets/happyThought.png",
         "link": "https://twitter-app-by-naima-and-priya.netlify.app",
         "repository": "https://github.com/bdnaima/project-happy-thoughts-vite"
@@ -46,6 +59,7 @@
       {
         "name": "Todo App",
         "description": "To do app with functions like:- adding todo list, subtask, deleting tasking and marking task completed",
+        "tech": "React, Redux, and CSS",
         "image": "../assets/todoApp.png",
         "link": "https://todo-app-by-naima-sarah-priya.netlify.app",
         "repository": "https://github.com/bdnaima/project-todos-redux"
@@ -53,6 +67,7 @@
       {
         "name": "Quiz App",
         "description": "Quiz about interesting food related questions",
+        "tech": "React, React-Router, and CSS",
         "image": "../assets/quizApp.png",
         "link": "https://quiz-app-by-naima-sarah-priya.netlify.app",
         "repository": "https://github.com/Priya-Pdh/project-redux-quiz"
@@ -60,7 +75,8 @@
       
       {
         "name": "Survey App",
-        "description": "Survey app about drinks",
+        "description": "Survey app about drinks, with function like:- progress bar and summary of selected items",
+        "tech": "React, React-Router, and CSS",
         "image": "../assets/surveyApp.png",
         "link": "https://survey-app-by-priya-and-naima.netlify.app",
         "repository": "https://github.com/Priya-Pdh/project-survey-vite"
@@ -69,16 +85,10 @@
       {
         "name": "Music App",
         "description": "Music app fetched the data from music app and styled with css",
+        "tech": "React, Music API, and CSS",
         "image": "../assets/musicApp.png",
         "link": "https://music-app-by-naima-and-priya.netlify.app",
         "repository": "https://github.com/bdnaima/project-music-releases-vite"
-      },
-      {
-        "name": "E-commerce App",
-        "description": "E-commerce app of clothing features includes from adding to cart, sorting clothes to checkout payment and adding reviews",
-        "image": "../assets/ecommerceApp.png",
-        "link": "https://typescript-react-js-e-commerce.onrender.com",
-        "repository": "https://github.com/Priya-Pdh/React.js-Typescript-Ecommerce"
       }
     ],
     "skills": {
