@@ -71,7 +71,7 @@ export const Skills = () => {
           <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
             <Paper>
               {skillIcons[skill] && <span >{skillIcons[skill]}</span>}
-              <Typography variant="subtitle1" mb={2} fontWeight="bold">
+              <Typography variant="subtitle1" mb={2} fontWeight="bold" color="primary">
                 {skill}
               </Typography>
             </Paper>
@@ -83,7 +83,7 @@ export const Skills = () => {
           <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
             <Paper>
               {softSkillIcons[skill] && <span>{softSkillIcons[skill]}</span>}
-              <Typography variant="subtitle1" mb={2} fontWeight="bold">
+              <Typography variant="subtitle1" mb={2} fontWeight="bold" color="primary">
                 {skill}
               </Typography>
             </Paper>

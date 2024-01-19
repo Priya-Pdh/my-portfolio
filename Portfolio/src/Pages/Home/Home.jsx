@@ -25,8 +25,8 @@ const Title = styled('h1')({
 
 const DescriptionContainer = styled(Paper)({
   marginTop: '20px',
-  padding: '15px',
-  maxWidth: '850px',
+  padding: '20px',
+  maxWidth: '900px',
   marginLeft: 'auto',
   marginRight: 'auto',
 });
@@ -59,7 +59,7 @@ const Home = () => {
         <DescriptionContainer elevation={3}>
           <Typography variant="h6">{personalInfo.summary}</Typography>
           <Divider />
-          <Typography>{personalInfo.des01}</Typography>
+          <Typography sx= {{ marginTop: '20px'}}>{personalInfo.des01}</Typography>
           <Typography>{personalInfo.des02}</Typography>
         </DescriptionContainer>
       </Box>
