@@ -91,7 +91,7 @@ const Navbar = () => {
         <Box
           sx={{
             display: { xs: 'none', md: 'flex', gap: '10px' },
-            marginRight: '2rem', // Adjust the margin as needed
+            marginRight: '2rem', 
           }}
         >
           {navItems.map((item, index) => (
@@ -105,7 +105,8 @@ const Navbar = () => {
                 edge="start"
                 color="black"
                 aria-label={item.label}
-                sx={{ '&:hover': { border: "1px solid black" } }}
+               
+                
               >
                 {item.icon}
               </IconButton>
