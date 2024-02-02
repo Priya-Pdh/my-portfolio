@@ -10,6 +10,7 @@ import { getImagePath } from '../../assets/getImagePath';
 function Education() {
   const { education } = data;
   const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
 
   useEffect(() => {
@@ -32,11 +33,12 @@ function Education() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <ArrowForward />, // Custom right arrow
-    prevArrow: <ArrowBack />, // Custom left arrow
+    nextArrow: <ArrowForward />,
+    prevArrow: <ArrowBack />, 
     customPaging: (i) => (
-      <div style={{ width: '10px', height: '10px', background: '#888', borderRadius: '50%', margin: '0 5px' }}></div>
-    ), // Custom dots
+      <div style={{ width: '10px', height: '10px', background: i === currentSlide ? '#007bff' : '#888', borderRadius: '50%', margin: '0 5px' }}></div>
+    ),
+    beforeChange: (current, next) => setCurrentSlide(next),
   };
 
   const handleNext = () => {
@@ -93,7 +95,7 @@ function Education() {
               right: '10px',
               transform: 'translateY(-50%)',
               cursor: 'pointer',
-              color: 'rgba(0, 0, 0, 0.54);'
+              color: 'rgba(0, 0, 0, 0.54)'
             }}
             onClick={handleNext}
           />
