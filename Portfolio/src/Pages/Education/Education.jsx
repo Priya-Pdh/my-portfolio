@@ -50,28 +50,28 @@ function Education() {
   };
 
   return (
-    <Box my={4} position="relative" sx={{width: "700px", height: "200px", margin: "auto"  }}>
-      <Typography variant="h4" sx={{ textAlign: 'center', marginBottom: '5rem', marginTop: "2rem" }}>
+    <Box my={4} position="relative" sx={{width:{ xs: "290px", sm: "540px", md: "600px", lg:"700px"}, height: "150px", margin: "auto"  }} >
+      <Typography variant="h4" sx={{ textAlign: 'center', marginBottom: '5rem', marginTop: "2rem", fontSize: {xs: "20px", sm:" 26px", md: "28px", lg: "30px"}}}>
         Education 🎓
       </Typography>
       {imagesLoaded ? (
         <>
           <Slider ref={sliderRef} {...settings}>
             {education.map((edu, index) => (
-              <Paper key={index} elevation={3} sx={{ padding: 2, marginBottom: 2, boxShadow: '1px 2px 4px rgba(0, 0, 0, 0.1)', backgroundColor: '#f8f8f8' }}>
-                <Box display="flex" alignItems="center">
-                  <img src={getImagePath(edu.logo)} alt={edu.name} style={{ marginRight: '16px', width: '120px', height: '90px' }} />
-                  <Box>
-                    <Typography variant="h6" gutterBottom>
+              <Paper key={index} elevation={3} sx={{ marginBottom: 2, boxShadow: '1px 2px 4px rgba(0, 0, 0, 0.1)', backgroundColor: '#f8f8f8' }}>
+                <Box display="flex" alignItems="center" height="150px">
+                  <img src={getImagePath(edu.logo)} alt={edu.name} style={{ marginRight: '16px', width: '120px', height: '90px',  marginLeft :  "20px" }} />
+                  <Box >
+                    <Typography variant="h6" gutterBottom sx={{ fontSize: {xs: '14px', sm: '16px', md:'18px', lg:'23px',}}}>
                       {edu.name}
                     </Typography>
-                    <Typography variant="body1" color="text.secondary">
+                    <Typography variant="body1" color="text.secondary" sx={{ fontSize: {xs: "12px", md: "16px", lg: "18px"}}}>
                       {edu.subject}
                     </Typography>
                   </Box>
                 </Box>
-                <Link href={edu.website} target="_blank" rel="noopener noreferrer" color="primary" underline="hover">
-                  Visit {edu.name}
+                <Link href={edu.website} target="_blank" rel="noopener noreferrer" color="primary" underline="hover" sx={{ fontSize: {xs: '12px', md:"14px", lg: "16px"}, paddingLeft : { xs: '20px', sm:'20px' }}}>
+                 {edu.name}
                 </Link>
               </Paper>
             ))}
