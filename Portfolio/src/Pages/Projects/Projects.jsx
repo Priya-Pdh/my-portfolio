@@ -34,7 +34,7 @@ function Project() {
 
   return (
     <Box my={4}>
-      <Typography variant="h4" sx={{ textAlign: 'center', marginBottom: '2rem' }}>
+      <Typography variant="h4" sx={{ textAlign: 'center', marginBottom: '2rem', fontSize: {xs: "20px", sm:" 26px", md: "28px", lg: "30px"} }}>
         Projects 👩🏻‍💻
       </Typography>
       {imagesLoaded ? (
