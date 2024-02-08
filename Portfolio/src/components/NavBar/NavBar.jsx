@@ -21,20 +21,20 @@ import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import { Link } from 'react-router-dom';
 
+const navItems = [
+  { to: '/', icon: <HomeIcon />, label: 'Home' },
+  { to: '/project', icon: <WorkIcon />, label: 'Project' },
+  { to: '/education', icon: <SchoolIcon />, label: 'Education' },
+  { to: '/skills', icon: <EmojiObjectsIcon />, label: 'Skills' },
+  { to: '/contact', icon: <ContactMailIcon />, label: 'Contact' },
+];
+
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const toggleDrawer = (open) => () => {
     setDrawerOpen(open);
   };
-
-  const navItems = [
-    { to: '/', icon: <HomeIcon />, label: 'Home' },
-    { to: '/project', icon: <WorkIcon />, label: 'Project' },
-    { to: '/education', icon: <SchoolIcon />, label: 'Education' },
-    { to: '/skills', icon: <EmojiObjectsIcon />, label: 'Skills' },
-    { to: '/contact', icon: <ContactMailIcon />, label: 'Contact' },
-  ];
 
   return (
     <AppBar position="static" style={{ backgroundColor: 'transparent',  borderRadius: "15px"}}>
