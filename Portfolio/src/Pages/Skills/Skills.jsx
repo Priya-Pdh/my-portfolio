@@ -1,5 +1,6 @@
-import React from 'react';
-import { Box, Typography, Paper, Grid } from '@mui/material';
+import React, { useState } from 'react';
+import { Box, Typography, Paper, Grid, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {
   FaReact,
   FaJs,
@@ -56,40 +57,63 @@ const softSkillIcons = {
   'Problem Solving': "🕵🏼‍♀️",
 };
 
-
-export const Skills = () => {
+const Skills = () => {
   const { skills } = data;
+  const [techExpanded, setTechExpanded] = useState(false);
+  const [softExpanded, setSoftExpanded] = useState(false);
+
+  const handleTechToggle = () => {
+    setTechExpanded((prevExpanded) => !prevExpanded);
+  };
+
+  const handleSoftToggle = () => {
+    setSoftExpanded((prevExpanded) => !prevExpanded);
+  };
 
   return (
     <Box my={4}>
-      <Typography variant="h4" sx={{ textAlign: 'center', marginBottom: '2rem', fontSize: {xs: "20px", sm:" 26px", md: "28px", lg: "30px"} }}>
+      <Typography variant="h4" sx={{ textAlign: 'center', marginBottom: '2rem', fontSize: { xs: "20px", sm: "26px", md: "28px", lg: "30px" } }}>
         Skills 🪄
       </Typography>
-      <Grid container spacing={3}>
-        {/* Tech Skills */}
-        {skills.techSkills.map((skill, index) => (
-          <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-            <Paper>
-              {skillIcons[skill] && <span >{skillIcons[skill]}</span>}
-              <Typography variant="subtitle1" mb={2} fontWeight="bold" color="primary">
-                {skill}
-              </Typography>
-            </Paper>
+      <Accordion expanded={techExpanded} onChange={handleTechToggle}  sx={{ backgroundColor: '#f8f8f8' }}>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="tech-skills-content" id="tech-skills-header">
+          <Typography variant="h6">Techical Skills</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Grid container spacing={3}>
+            {skills.techSkills.map((skill, index) => (
+              <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+                <Paper>
+                  {skillIcons[skill] && <span>{skillIcons[skill]}</span>}
+                  <Typography variant="subtitle1" mb={2} fontWeight="bold" color="primary">
+                    {skill}
+                  </Typography>
+                </Paper>
+              </Grid>
+            ))}
           </Grid>
-        ))}
+        </AccordionDetails>
+      </Accordion>
 
-        {/* Soft Skills */}
-        {skills.softSkills.map((skill, index) => (
-          <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-            <Paper>
-              {softSkillIcons[skill] && <span>{softSkillIcons[skill]}</span>}
-              <Typography variant="subtitle1" mb={2} fontWeight="bold" color="primary">
-                {skill}
-              </Typography>
-            </Paper>
+      <Accordion expanded={softExpanded} onChange={handleSoftToggle}  sx={{ backgroundColor: '#f8f8f8' }}>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="soft-skills-content" id="soft-skills-header">
+          <Typography variant="h6">Soft Skills</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Grid container spacing={3}>
+            {skills.softSkills.map((skill, index) => (
+              <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+                <Paper>
+                  {softSkillIcons[skill] && <span>{softSkillIcons[skill]}</span>}
+                  <Typography variant="subtitle1" mb={2} fontWeight="bold" color="primary">
+                    {skill}
+                  </Typography>
+                </Paper>
+              </Grid>
+            ))}
           </Grid>
-        ))}
-      </Grid>
+        </AccordionDetails>
+      </Accordion>
     </Box>
   );
 }
