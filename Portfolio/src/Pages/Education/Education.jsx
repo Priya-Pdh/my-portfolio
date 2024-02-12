@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Box, Typography, Paper, Link, CircularProgress } from '@mui/material';
 import Slider from 'react-slick';
-import { ArrowBack, ArrowForward } from '@mui/icons-material'; // Import Material-UI icons
+
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import data from '../../data.json';
@@ -33,8 +35,8 @@ function Education() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <ArrowForward />,
-    prevArrow: <ArrowBack />, 
+    nextArrow: <KeyboardArrowRightIcon />,
+    prevArrow: <KeyboardArrowLeftIcon />, 
     customPaging: (i) => (
       <div style={{ width: '10px', height: '10px', background: i === currentSlide ? '#007bff' : '#888', borderRadius: '50%', margin: '0 5px' }}></div>
     ),
@@ -76,23 +78,23 @@ function Education() {
               </Paper>
             ))}
           </Slider>
-          {/* Additional arrows in the corners */}
-          <ArrowBack
+          {/* Additional arrows in the right side */}
+          <KeyboardArrowLeftIcon
             sx={{
               position: 'absolute',
               top: '50%',
-              left: '10px',
+              right: '30px', // Changed from left to right
               transform: 'translateY(-50%)',
               cursor: 'pointer',
               color: 'rgba(0, 0, 0, 0.54);'
             }}
             onClick={handlePrev}
           />
-          <ArrowForward
+          <KeyboardArrowRightIcon
             sx={{
               position: 'absolute',
               top: '50%',
-              right: '10px',
+              right: '10px', // Changed from right: 10px to right: 30px
               transform: 'translateY(-50%)',
               cursor: 'pointer',
               color: 'rgba(0, 0, 0, 0.54)'
