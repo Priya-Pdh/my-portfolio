@@ -2,6 +2,8 @@ import React from 'react';
 import { Box, Card, CardContent, Typography, Divider, List, ListItem, ListItemIcon, ListItemText, Link, Grid } from '@mui/material';
 import { FaMapMarkerAlt, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import data from '../../data.json';
+import Phone from '../../animations/phone.json';
+import Lottie from 'lottie-react'
 
 function Contact() {
   const { contactInfo } = data;
@@ -18,10 +20,11 @@ function Contact() {
           >
             <Card elevation={0} sx={{ backgroundColor: 'transparent' }}>
               <CardContent>
-                <Typography variant="h4" mb={2} sx={{ fontSize: { xs: "20px", sm: "26px", md: "28px", lg: "30px" } }}>
-                  Contact Information 📞
-                  <Divider />
+                <Typography variant="h4" mb={2} sx={{ fontSize: { xs: "20px", sm: "26px", md: "28px", lg: "30px" }, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  Contact Information 
+                  <Lottie animationData={Phone} style={{ width: '80px', height: '80px', marginLeft: '10px' }} loop={1} />
                 </Typography>
+                <Divider />
                 <List>
                   <ListItem>
                     <ListItemIcon>
