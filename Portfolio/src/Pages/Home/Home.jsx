@@ -53,11 +53,11 @@ const Home = () => {
         </SpinnerContainer>
       )}
       <ProfileImage src={myImage} alt="my Name" style={{ display: imageLoaded ? 'block' : 'none' }} />
-      <Title>{personalInfo.title}</Title>
+      
 
       <Box mt={2}>
         <DescriptionContainer elevation={3}>
-          <Typography variant="h6">{personalInfo.summary}</Typography>
+        <Title>{personalInfo.title}</Title>
           <Divider />
           <Typography sx= {{ marginTop: '20px'}}>{personalInfo.des01}</Typography>
           <Typography>{personalInfo.des02}</Typography>
