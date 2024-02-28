@@ -19,7 +19,7 @@ import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const navItems = [
   { to: '/', icon: <HomeIcon />, label: 'Home' },
@@ -31,6 +31,7 @@ const navItems = [
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const location = useLocation();
 
   const toggleDrawer = (open) => () => {
     setDrawerOpen(open);
@@ -79,7 +80,7 @@ const Navbar = () => {
                   style={{ textDecoration: 'none', color: 'black' }}
                   onClick={toggleDrawer(false)}
                 >
-                  <ListItem>
+                  <ListItem button selected={location.pathname === item.to}>
                     <ListItemIcon>{item.icon}</ListItemIcon>
                     <ListItemText primary={item.label} />
                   </ListItem>
@@ -105,8 +106,7 @@ const Navbar = () => {
                 edge="start"
                 color="black"
                 aria-label={item.label}
-               
-                
+                sx={{color: location.pathname === item.to? '#1976d2' : 'rgba(0, 0, 0, 0.54)'}}
               >
                 {item.icon}
               </IconButton>
